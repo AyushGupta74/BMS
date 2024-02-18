@@ -1,0 +1,123 @@
+.form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+  
+  .form-group input:invalid {
+    border-color: red;
+  }
+  
+  .form-group input:valid {
+    border-color: green;
+  }
+  
+  .form-group input:placeholder-shown {
+    border-color: #ccc;
+  }
+  
+  .form-group input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+  
+  .form-group input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+  
+  .form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  .button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Additional Styles */
+  .form-group input[type="text"]:focus,
+  .form-group input[type="email"]:focus,
+  .form-group input[type="password"]:focus,
+  .form-group input[type="address"]:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+  
+  .form-group input[type="text"]:invalid,
+  .form-group input[type="email"]:invalid,
+  .form-group input[type="password"]:invalid,
+  .form-group input[type="address"]:invalid {
+    border-color: red;
+  }
+  
+  .form-group input[type="text"]:valid,
+  .form-group input[type="email"]:valid,
+  .form-group input[type="password"]:valid,
+  .form-group input[type="address"]:valid {
+    border-color: green;
+  }
+  
+  .form-group input[type="text"]:placeholder-shown,
+  .form-group input[type="email"]:placeholder-shown,
+  .form-group input[type="password"]:placeholder-shown,
+  .form-group input[type="address"]:placeholder-shown {
+    border-color: #ccc;
+  }
+  
+  .form-group input[type="text"]:-webkit-autofill,
+  .form-group input[type="email"]:-webkit-autofill,
+  .form-group input[type="password"]:-webkit-autofill,
+  .form-group input[type="address"]:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+  
+  .form-group input[type="text"]:-webkit-autofill:focus,
+  .form-group input[type="email"]:-webkit-autofill:focus,
+  .form-group input[type="password"]:-webkit-autofill:focus,
+  .form-group input[type="address"]:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
