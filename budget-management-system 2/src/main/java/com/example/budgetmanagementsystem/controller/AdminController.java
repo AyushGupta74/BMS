@@ -7,18 +7,19 @@ import jakarta.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.lang.NonNull;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("/api/admin")
 public class AdminController {
 
     @Autowired
     private UserService userService;
 
     @PostMapping
-    public ResponseEntity<?> registerUser(@Valid @RequestBody User user, BindingResult result) {
+    public ResponseEntity<?> registerUser(@Valid @RequestBody @NonNull User user, BindingResult result) {
         if (result.hasErrors()) {
             return ResponseEntity.badRequest().body(result.getAllErrors());
         }
