@@ -9,6 +9,9 @@ const Sidebar = () => {
       <ul>
         <li>
           <Link to="/dashboard">Dashboard</Link>
+          <Routes>
+            <Route path="/dashboard" element={<Dashboard/>} />
+          </Routes>
         </li>
         <li>
           <Link to="/budget-management">Budget Management</Link>
@@ -29,11 +32,10 @@ const Sidebar = () => {
           <Link to="/settings">Settings</Link>
         </li>
       </ul>
-      <Routes>
-        <Route path="/dashboard" component={Dashboard} />
-      </Routes>
+      
     </nav>
   );
 };
 
 export default Sidebar;
+ 
