@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.NonNull;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,16 +18,17 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.budgetmanagementsystem.model.User;
 import com.example.budgetmanagementsystem.service.UserService;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("/login")
-    public User login(@RequestParam("username") String username, @RequestParam("password") String password) {
-        return userService.validateCredentials(username, password);
-    }
+//    @PostMapping("/login")
+//    public User login(@RequestParam("username") String username, @RequestParam("password") String password) {
+//        return userService.validateCredentials(username, password);
+//    }
     @GetMapping
     public List<User> getAllUsers() {
         return userService.getAllUsers();
